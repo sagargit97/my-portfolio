@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sagar's Portfolio</title>
+    <style>
+        /* General body styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2c3e50; /* A dark, professional blue-gray */
+            color: #ecf0f1; /* Off-white for better readability on dark background */
+            line-height: 1.6;
+            scroll-behavior: smooth; /* This enables the smooth scrolling */
+        }
+
+        /* Header and Navigation */
+        header {
+            background-color: #2c3e50;
+            padding: 1.5rem 0;
+            text-align: center;
+            border-bottom: 3px solid #1abc9c; /* Vibrant teal accent line */
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover, nav a:focus {
+            color: #1abc9c; /* Teal on hover */
+            transform: translateY(-2px); /* Slight lift effect */
+        }
+
+        /* Main container and sections */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: #34495e; /* A slightly lighter shade for content area */
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); /* Pronounced shadow */
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding: 30px;
+            border-left: 5px solid #1abc9c;
+            border-radius: 8px;
+            background-color: #2c3e50;       
+            scroll-margin-top: 100px; 
+}
+
+        
+        .section:last-child {
+            border-left: none;
+        }
+
+        h2 {
+            text-align: center;
+            color: #1abc9c;
+            font-size: 2rem;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+        
+        .about ul {
+            list-style-type: '👉 ';
+            padding-left: 20px;
+        }
+        
+        .about li {
+            margin-bottom: 10px;
+        }
+        
+        .about li b {
+            color: #ecf0f1;
+        }
+        
+        .portfolio-buttons {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .portfolio-buttons a {
+            padding: 12px 24px;
+            background-color: #1abc9c;
+            color: #2c3e50;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            display: inline-block;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .portfolio-buttons a:hover {
+            background-color: #16a085;
+            transform: scale(1.05);
+        }
+        
+        /* Contact Form */
+        .contact-form-wrapper {
+            margin-top: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #7f8c8d;
+            border-radius: 6px;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #1abc9c;
+            outline: none;
+        }
+
+        
+        .btn {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            background-color: #1abc9c;
+            color: #2c3e50;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #16a085;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            border-top: 3px solid #1abc9c;
+            margin-top: 40px;
+        }
+        
+        footer a {
+            color: #1abc9c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sagar's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#resume">My Skills</a></li>
+                <li><a href="#portfolio">My Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <section id="home" class="section">
+            <h2>Welcome!</h2>
+            <p style="text-align: center;">
+                Hello, I'm Sagar. This is my simple portfolio website.
+            </p>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>
+                Hi! I'm Sagar Senapati from Bhubaneswar, Odisha. I'm a QA Engineer with some experience, but I've recently been learning web development. I'm a quick learner and I'm excited to find a new role where I can use my skills.
+            </p>
+        </section>
+
+        <section id="resume" class="section">
+            <h2>My Skills</h2>
+            <p>Here are some of the things I know:</p>
+            <ul>
+                <li><b>Languages:</b> Java, Python, HTML, CSS, JavaScript, Liquid</li>
+                <li><b>Testing:</b> Manual and Automation Testing</li>
+                <li><b>Tools:</b> VS Code, PyCharm, IntelliJ, Git</li>
+            </ul>
+        </section>
+
+        <section id="portfolio" class="section">
+            <h2>My Projects</h2>
+            <p style="text-align: center;">Here are some of the websites I've contributed to.</p>
+            
+            <div class="portfolio-buttons">
+                <a href="https://neobest.in/" target="_blank">NeoBeds</a>
+                <a href="https://fitsashwear.com/" target="_blank">fitsashwear</a>
+                <a href="https://thewellnessshop.in/" target="_blank">The Wellness Shop</a>
+            </div>
+        </section>
+        
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <p style="text-align: center;">Feel free to reach out!</p>
+            
+            <div class="contact-form-wrapper">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>
+            &copy; 2025 <b><a href="#home">Sagar's Portfolio</a></b>. All rights reserved.
+        </p>
+    </footer>
+</body>
+</html>
